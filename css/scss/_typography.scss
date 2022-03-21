@@ -1,0 +1,86 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+    color: $lightBlue;
+
+    padding-bottom: Min(5vw, 10px);
+}
+
+*{
+    font-family: "Segoe UI", Arial;
+    color: $fontColor;
+    line-height: 1.4;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 18px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $lightBlue;
+
+}
+
+// remove list breaks
+.nav--links{
+    li::marker{
+        font-size: 0px;
+    }
+}
+
+// modify marker look
+ul:not(.nav--links){
+
+    li{
+        position: relative;
+        padding-left: 20px;
+
+        &::marker{
+            font-size: 0;
+        }
+
+        @include before{
+            width: 8px;
+            height: 4px;
+            border: solid $lightBlue 2px;
+            background: transparent;
+            top: 9px;
+            border-radius: 20px 20px 0px 20px;
+        }
+    }
+}
+
+
+
+
+h1{
+    @media screen and (min-width: 1024px) {
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        font-size: 40px;
+    }
+}
+
+h2{
+    @media screen and (min-width: 1024px) {
+        font-size: 50px;
+    }
+}
+
+h3{
+    @media screen and (min-width: 1024px) {
+        font-size: 40px;
+    }
+}
+
+h4{
+    @media screen and (min-width: 1024px) {
+        font-size: 35px;
+    }
+}
+
+p{
+    padding-bottom: Min(5vw, 20px);
+}

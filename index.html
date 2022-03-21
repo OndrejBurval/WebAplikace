@@ -8,20 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- font-family: 'Playfair Display', serif; !-->
     <link rel="stylesheet" href="css/style.css">
     <title> Ondřej Buřval Personal </title>
 </head>
 <body>
 <nav>
     <div class="nav--inner">
-        <img src="img/logo.svg" alt="Logo společnosti.svg">
+        <a href="#uvod" class="logo">
+            <picture>
+                <source media="(min-width:768px)" srcset="img/logo.svg">
+                <img src="img/logo-noText.svg" alt="Logo společnosti.svg">
+            </picture>
+        </a>
+
+        <a class="mobile-nav">
+            ShowMenu
+        </a>
 
         <ul class="nav--links">
             <li class="nav--item">  <a href="#uvod"> úvod </a></li>
             <li class="nav--item">  <a href="#sluzby"> služby </a></li>
             <li class="nav--item">  <a href="#reference"> reference</a></li>
-            <li class="nav--item">  <a href="#kontakt" class="btn--primary"> kontakt</a></li>
+            <li class="nav--item navBTN">  <a href="#kontakt"> <span class="btn btn--primary"> kontakt </span></a></li>
         </ul>
     </div>
 </nav>
@@ -40,16 +48,24 @@
                 c pede. Mauris elementum mauris vitae tortor.
             </p>
 
-            <a href="#" class="btn--primary">
-                Button
-            </a>
-            <a href="#" class="btn--secondary">
-                Button
-            </a>
+            <div class="links">
+                <a href="#">
+                    <span class="btn btn--primary">
+                        Button
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="btn btn--secondary">
+                        Button
+                    </span>
+                </a>
+            </div>
         </div>
 
         <div class="content--right">
-            <img src="img/character.svg" class="beforeBG mainIMG" alt="Postava.svg">
+            <div class="img--container beforeBG mainIMG">
+                <img src="img/character.svg" alt="Postava.svg">
+            </div>
         </div>
     </section>
 
@@ -111,8 +127,10 @@
                     torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
                     sagittis.c pede. Mauris elementum mauris vitae tortor.
                 </p>
-                <a href="#" class="btn--third">
-                    Zjistit více
+                <a href="#">
+                    <span class="btn btn--third">
+                        Zjistit více
+                    </span>
                 </a>
             </div>
 
@@ -126,8 +144,10 @@
                     torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
                     sagittis.c pede. Mauris elementum mauris vitae tortor.
                 </p>
-                <a href="#" class="btn--third">
-                    Zjistit více
+                <a href="#">
+                    <span class="btn btn--third">
+                        Zjistit více
+                    </span>
                 </a>
             </div>
 
@@ -140,8 +160,10 @@
                     torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
                     sagittis.c pede. Mauris elementum mauris vitae tortor.
                 </p>
-                <a href="#" class="btn--third">
-                    Zjistit více
+                <a href="#">
+                    <span class="btn btn--third">
+                        Zjistit více
+                    </span>
                 </a>
             </div>
 
@@ -162,8 +184,10 @@
                     sagittis.c pede. Mauris elementum mauris vitae tortor.
                 </p>
 
-                <a href="#" class="btn--primary">
-                    Navštívit
+                <a href="#">
+                    <span class="btn btn--primary">
+                        Navštívit
+                    </span>
                 </a>
             </div>
             <div class="content--right">
@@ -188,8 +212,10 @@
                     sagittis.c pede. Mauris elementum mauris vitae tortor.
                 </p>
 
-                <a href="#" class="btn--primary">
-                    Navštívit
+                <a href="#">
+                    <span class="btn btn--primary">
+                        Navštívit
+                    </span>
                 </a>
             </div>
         </div>
@@ -216,8 +242,10 @@
                 </label>
                 <input type="tel" id="phoneInput" placeholder="vložte telefon">
 
-                <button type="submit" class="btn--submit">
-                    Odeslat
+                <button type="submit">
+                    <span class="btn btn--submit">
+                        Odeslat
+                    </span>
                 </button>
             </div>
 
