@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290.073" height="481.607" viewBox="0 0 290.073 481.607">
+  <g id="Character" transform="translate(-124 -1905.408)">
+    <g id="Symbols" transform="translate(124 2112.403)">
+      <g id="Bottom_Standing_Baggy-Pants" data-name="Bottom/Standing/Baggy-Pants" transform="translate(0)">
+        <path id="Leg" d="M134,0l56.4,142.737L228.22,263.409h14.936L185.331,0Z" transform="translate(0.184)" fill="#dcae92" fill-rule="evenodd"/>
+        <path id="Leg-2" data-name="Leg" d="M138.04,0c-.6,50.159-9.359,117.689-10.758,120.817q-1.4,3.126-96.606,79.521l10.287,11.009Q153.3,145.847,158.5,137.112c5.2-8.736,22.122-89.126,35.71-137.112Z" transform="translate(-15.212)" fill="#dcae92" fill-rule="evenodd"/>
+        <g id="Accessories_Shoe_Flat-Sneaker" data-name="Accessories/Shoe/Flat-Sneaker" transform="matrix(0.643, 0.766, -0.766, 0.643, 18.192, 190.703)">
+          <path id="shoe" d="M1.928,6.974A24.671,24.671,0,0,0,0,14.677a57.653,57.653,0,0,0,1.036,9.071H65.842q2.526-8.351-2.917-9.017t-9.042-1.2L23.761.1a1.149,1.149,0,0,0-1.517.582l-.013.03L20.3,5.408q-5.038,2.351-8.188,2.351A18.544,18.544,0,0,1,5.038,5.692h0A2.3,2.3,0,0,0,1.991,6.823Q1.957,6.9,1.928,6.974Z" transform="translate(0 0)" fill="#e4e4e4" fill-rule="evenodd"/>
+        </g>
+        <g id="Accessories_Shoe_Flat-Sneaker-2" data-name="Accessories/Shoe/Flat-Sneaker" transform="translate(220.359 250.864)">
+          <path id="shoe-2" data-name="shoe" d="M2.928,26.306A24.671,24.671,0,0,0,1,34.009,57.653,57.653,0,0,0,2.036,43.08H66.842q2.526-8.351-2.917-9.017t-9.042-1.2L24.761,19.432a1.149,1.149,0,0,0-1.517.582l-.013.03L21.3,24.74q-5.038,2.351-8.188,2.351a18.544,18.544,0,0,1-7.069-2.067h0a2.3,2.3,0,0,0-3.047,1.131Q2.957,26.23,2.928,26.306Z" transform="translate(-1 -19.332)" fill="#e4e4e4" fill-rule="evenodd"/>
+        </g>
+        <path id="Pant" d="M172.864,250.981l71.013-7.708L191.248,0h-63.6Z" transform="translate(-0.763 0)" fill="#191847" fill-rule="evenodd"/>
+        <path id="Pant-2" data-name="Pant" d="M43.46,182.577l46.581,55.136q73.594-80.377,85.811-104.893T197.816,0H126.209q-5.324,95.282-7.178,99.716T43.46,182.577Z" transform="translate(-13.307)" fill="#393f82" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <g id="Symbols-2" data-name="Symbols" transform="translate(254.364 1905.408)">
+      <g id="Head_Front_Short-2" data-name="Head/Front/Short-2" transform="translate(0)">
+        <g id="Head" transform="translate(4.59 8.032)">
+          <path id="Path_26" data-name="Path 26" d="M9.48,39.575C4.193,33.369.615,25.763,1.213,17.241,2.936-7.315,37.118-1.913,43.767,10.481s5.859,43.831-2.734,46.046c-3.427.883-10.728-1.281-18.158-5.759l4.664,33H0Z" transform="translate(0 0)" fill="#dcae92" fill-rule="evenodd"/>
+        </g>
+        <path id="Hair" d="M61.954,77.135C58.5,61.758,48.651,51.276,50.155,44.4q1.5-6.873,8.016-8.548Q61.539,22.23,79.9,24.264C98.255,26.3,109.459,33.923,104.621,50.7c-4.448,0-9.817-1.609-17.242,1.147q-3.534,1.312-5.055,8.135H78.968q-4.885-8.1-9.633-5.951T67.176,64.457L65.524,77.135Z" transform="translate(-50 -24)" fill="#191847" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <g id="Symbols-3" data-name="Symbols" transform="translate(157.839 1970.268)">
+      <g id="Body_Hoodie" data-name="Body/Hoodie" transform="translate(0 0)">
+        <path id="Skin" d="M223.878,92.212l38.639,28.373q15.721,4.243,26.268,10.555c1.661,1.513,3.668,4.578-3.221,4.048s-14.157-.778-15.108,1.572,3.218,5.159,1.3,8.329q-1.922,3.171-18.154-15.9l-38.262-15.867Zm-148.355.979,25.314.1q-23.445,75.685-25.314,80.316c-2.8,6.946,3.129,17.525,5.665,23.21-8.261,3.7-7.381-9.993-17.8-5.146-9.512,4.426-16.748,12.444-27.738,5.663-1.351-.833-2.832-3.972.746-6.425C45.306,184.8,58.15,174.1,59.885,170.58Q63.435,163.379,75.524,93.191Z" transform="translate(-34.163 40.011)" fill="#dcae92" fill-rule="evenodd"/>
+        <path id="Coat-Back" d="M0,2.7,10.278,0c41.642,30.057,63.165,92.917,113.6,122.8L113.693,137.96C30.473,134.969,3.211,58.383,0,2.7Z" transform="translate(118.52 9.308) rotate(10)" fill="#e87613" fill-rule="evenodd"/>
+        <path id="Shirt" d="M90,138.091h92.68c4.236,0,3.438-6.115,2.825-9.2-7.064-35.613-34.646-74-34.646-124.7L124.125,0C102.013,35.563,94.367,79.347,90,138.091Z" transform="translate(-17.157 4.256)" fill="#dde3e9" fill-rule="evenodd"/>
+        <path id="Coat-Front" d="M98.169,35.7q-5.824-1.674-9.224-7.809C79.174,10.259,82.7.552,93.145-2.639S112.9.742,129.537.742a16.758,16.758,0,0,1,2.487.17l8.369.478q36.016,122.066,19.866,162.881H87.312A248.791,248.791,0,0,1,74.9,189.709H55.028Q52.222,98.982,98.169,35.7Z" transform="translate(-36.582 25.513)" fill="#ff9b21" fill-rule="evenodd"/>
+        <path id="Shade" d="M97.536,100.5q3.441,28.792,11.186,41.793H81.652Q89.214,124.657,97.536,100.5Z" transform="translate(-18.921 25.493)" fill="rgba(0,0,0,0.1)" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

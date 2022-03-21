@@ -1,0 +1,12 @@
+<svg id="Symbols" xmlns="http://www.w3.org/2000/svg" width="360.344" height="858.427" viewBox="0 0 360.344 858.427">
+  <g id="Scene_Home" data-name="Scene/Home" transform="translate(0 0)">
+    <g id="Lamp" transform="translate(0 0)">
+      <path id="Body" d="M235.873,59.121,197,20.22a16.75,16.75,0,0,0-23.688,0l-.005,0L69.807,123.77A33.5,33.5,0,0,0,60,147.453V833.306" transform="translate(0.718 12.559)" fill="none" stroke="#cbcbcb" stroke-width="8" fill-rule="evenodd"/>
+      <rect id="Lamp-Base" width="123.53" height="14.656" rx="3" transform="translate(0 843.771)" fill="#afb9c5"/>
+      <g id="Lamp-Top" transform="translate(360.609 98.544) rotate(135)">
+        <path id="Lamp-2" data-name="Lamp" d="M69.093,127.718h0a69.093,69.093,0,0,0,69.093-69.093V0H0V58.625A69.093,69.093,0,0,0,69.093,127.718Z" transform="translate(0 11.644)" fill="#c5cfd6" fill-rule="evenodd"/>
+        <ellipse id="Lamp-3" data-name="Lamp" cx="69.093" cy="13.609" rx="69.093" ry="13.609" transform="translate(0.374 0)" fill="#f2f2f2"/>
+      </g>
+    </g>
+  </g>
+</svg>
