@@ -21,11 +21,14 @@
             </picture>
         </a>
 
-        <a class="mobile-nav">
-            ShowMenu
+        <a class="mobile-nav-open">
+            <img src="img/icons/menu.svg" alt="Ikonka menu.svg">
         </a>
 
         <ul class="nav--links">
+            <li class="mobile-nav-close">
+                <img src="img/icons/close.svg" alt="Ikonka menu.svg">
+            </li>
             <li class="nav--item">  <a href="#uvod"> úvod </a></li>
             <li class="nav--item">  <a href="#sluzby"> služby </a></li>
             <li class="nav--item">  <a href="#reference"> reference</a></li>
@@ -74,19 +77,25 @@
         <ul>
             <li class="pathBox">
                 <a href="#reference">
-                    reference.
+                    <h2>
+                        reference.
+                    </h2>
                 </a>
             </li>
 
             <li class="pathBox">
                 <a href="#sluzby">
-                    služby.
+                    <h2>
+                        služby.
+                    </h2>
                 </a>
             </li>
 
             <li class="pathBox">
                 <a href="#kontakt">
-                    kontakt.
+                    <h2>
+                        kontakt.
+                    </h2>
                 </a>
             </li>
         </ul>
@@ -116,58 +125,61 @@
             služby
         </h2>
 
-        <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="slide">
+                    <h2>aplikace</h2>
+                    <div class="slide--inner">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
+                            sagittis.c pede. Mauris elementum mauris vitae tortor.
+                        </p>
+                        <a href="#">
+                        <span class="btn btn--third">
+                            Zjistit více
+                        </span>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="carousel--item">
-                <h2>
-                    aplikace
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora
-                    torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
-                    sagittis.c pede. Mauris elementum mauris vitae tortor.
-                </p>
-                <a href="#">
-                    <span class="btn btn--third">
-                        Zjistit více
-                    </span>
-                </a>
+                <div class="slide active">
+                    <h2>webové stránky</h2>
+                    <div class="slide--inner">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
+                            sagittis.c pede. Mauris elementum mauris vitae tortor.
+                        </p>
+                        <a href="#">
+                        <span class="btn btn--third">
+                            Zjistit více
+                        </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <h2>ostatní</h2>
+                    <div class="slide--inner">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
+                            sagittis.c pede. Mauris elementum mauris vitae tortor.
+                        </p>
+                        <a href="#">
+                        <span class="btn btn--third">
+                            Zjistit více
+                        </span>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="carousel--item active">
-                <h2>
-                    webové stránky
-                </h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora
-                    torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
-                    sagittis.c pede. Mauris elementum mauris vitae tortor.
-                </p>
-                <a href="#">
-                    <span class="btn btn--third">
-                        Zjistit více
-                    </span>
-                </a>
-            </div>
-
-            <div class="carousel--item">
-                <h2>
-                    ostatní
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora
-                    torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim
-                    sagittis.c pede. Mauris elementum mauris vitae tortor.
-                </p>
-                <a href="#">
-                    <span class="btn btn--third">
-                        Zjistit více
-                    </span>
-                </a>
-            </div>
-
         </div>
+
+        <button id="prevSlide"> Prev </button>
+        <button id="nextSlide"> Next </button>
     </section>
 
 
@@ -313,7 +325,8 @@
     </div>
 </footer>
 
-
-<script scr="js/app.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/pathBoxes.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

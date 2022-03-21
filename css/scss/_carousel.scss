@@ -1,0 +1,79 @@
+.sluzby{
+  position: relative;
+
+  @include before{
+    width: 50%;
+    left: -60%;
+    z-index: 1;
+    background: linear-gradient(to right, white, transparent);
+
+  }
+
+  @include after{
+    width: 50%;
+    left: auto;
+    right: -60%;
+    z-index: 1;
+    background: linear-gradient(to left, white, transparent);
+
+  }
+}
+
+.carousel-container{
+  width: 100%;
+  margin: auto;
+  position: relative;
+
+}
+
+.carousel-slide{
+  width: 100%;
+  display: flex;
+  grid-auto-columns: 100%;
+  grid-template-rows: 100%;
+  transition: transform .7s ease-in-out;
+}
+
+.slide{
+  position: relative;
+  background: $yellow;
+  min-width: 100%;
+  transform: scale(.6);
+  transition: .3s;
+  border-radius: 80px 80px 0px 80px;
+  z-index: -1;
+
+  .btn{
+    max-width: 250px;
+    margin-top: 15px;
+  }
+
+
+  &--inner{
+    width: 80%;
+    margin: auto;
+    padding-block: 50px;
+  }
+
+  p{
+    color: white;
+  }
+
+  h2{
+    position: absolute;
+    top: -50px;
+    color: $lightBlue;
+  }
+}
+
+.active{
+  position: relative;
+  background: $lightBlue;
+  min-width: 100%;
+  min-height: 200px;
+  transform: scale(1);
+
+  h2{
+    color: $orange;
+  }
+}
