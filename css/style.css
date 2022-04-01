@@ -447,15 +447,48 @@ body {
   position: relative;
   margin-block: 100px 200px;
 }
+@media (max-width: 767px) {
+  .pathBoxes {
+    margin-block: 150px 100px;
+  }
+}
 .pathBoxes ul {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .pathBoxes ul {
+    width: calc(100% - 10px);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 5px;
+  }
 }
 .pathBoxes .pathBox {
   position: relative;
   padding: 0;
   width: 28%;
   min-height: 400px;
+}
+@media (max-width: 767px) {
+  .pathBoxes .pathBox {
+    width: 100%;
+    height: 100%;
+    min-height: unset;
+  }
+  .pathBoxes .pathBox:first-child a {
+    border-radius: 50px 0px 0px 0px;
+  }
+  .pathBoxes .pathBox:nth-child(2) a {
+    border-radius: 0px 50px 0px 0px;
+  }
+  .pathBoxes .pathBox:last-child {
+    grid-column: 1/3;
+  }
+  .pathBoxes .pathBox:last-child a {
+    border-radius: 0px 0px 0px 50px;
+  }
 }
 .pathBoxes .pathBox::after {
   position: absolute;
@@ -481,6 +514,11 @@ body {
   padding: 25px;
   transition: 0.45s;
 }
+@media (max-width: 767px) {
+  .pathBoxes .pathBox a {
+    border-radius: 0px;
+  }
+}
 .pathBoxes .pathBox a h2 {
   position: relative;
   font-weight: 300;
@@ -489,6 +527,11 @@ body {
   font-size: 45px;
   transform-origin: 20% 80%;
   transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .pathBoxes .pathBox a h2 {
+    font-size: 25px;
+  }
 }
 .pathBoxes .pathBox::before {
   display: none;
@@ -500,6 +543,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 20px;
   background: #00509d;
   transform: scale(1.05);
+}
+@media (max-width: 767px) {
+  .pathBoxes .pathBox:hover a {
+    z-index: 30;
+  }
 }
 .pathBoxes .pathBox:hover a h2 {
   color: #ffd500;
@@ -518,6 +566,115 @@ body {
   transition: transform 0.3s;
   pointer-events: none;
   z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .citace {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 767px) {
+  .citace .content--left {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}
+.citace .content--right {
+  position: relative;
+  background: #00509d;
+  padding: 50px 30px;
+  margin-inline: 10px;
+  margin-top: -70px;
+  border-radius: 70px 100px 0px 70px;
+}
+@media (max-width: 767px) {
+  .citace .content--right {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    padding-bottom: 50px;
+  }
+}
+.citace .content--right p {
+  color: white;
+}
+.citace .content--right .autor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-top: 15px;
+}
+@media (max-width: 767px) {
+  .citace .content--right .autor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+}
+.citace .content--right .autor strong {
+  color: white;
+}
+.citace .content--right .autor span {
+  color: #d0d0d0;
+}
+.citace .content--right .autor::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  left: -10px;
+  top: -20px;
+  width: 40px;
+  content: '"';
+  font-size: 115px;
+  pointer-events: none;
+  background: transparent;
+  font-family: "Engravers MT";
+  color: white;
+}
+@media (max-width: 767px) {
+  .citace .content--right .autor::before {
+    display: none;
+  }
+}
+.citace .img--container {
+  position: relative;
+  z-index: 2;
+  max-height: 350px;
+  max-width: 350px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  clip-path: circle(65% at 60% 35%);
+}
+@media (max-width: 767px) {
+  .citace .img--container {
+    margin-bottom: -80px;
+    margin-left: -10px;
+  }
+}
+@media (max-width: 767px) {
+  .citace .img--container::before {
+    height: auto;
+    width: 100%;
+    bottom: 20px;
+  }
+}
+.citace img {
+  margin-top: 150px;
+}
+@media (max-width: 767px) {
+  .citace img {
+    max-width: 400px;
+    width: 100%;
+    max-height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
