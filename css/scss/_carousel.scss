@@ -1,6 +1,10 @@
 .sluzby{
   position: relative;
 
+  @media (max-width: 767px){
+    margin-bottom: 100px;
+  }
+
   @include before{
     width: 50%;
     left: -60%;
@@ -43,9 +47,18 @@
   border-radius: 80px 80px 0px 80px;
   z-index: -1;
 
+  @media (max-width: 767px){
+    margin-top: 30px;
+  }
+
   .btn{
-    max-width: 250px;
     margin-top: 15px;
+
+    @media (min-width: 768px){
+      max-width: 250px;
+    }
+
+
   }
 
 
@@ -53,6 +66,10 @@
     width: 80%;
     margin: auto;
     padding-block: 50px;
+    
+    @media (max-width: 767px){
+        padding-block: 50px 70px;
+    }
   }
 
   p{
@@ -61,8 +78,16 @@
 
   h2{
     position: absolute;
-    top: -50px;
     color: $lightBlue;
+
+    @media (min-width: 768px){
+      top: -50px;
+    }
+    
+    @media (max-width: 767px){
+      font-size: 30px;
+      top: -25px;
+    }
   }
 }
 
@@ -77,3 +102,74 @@
     color: $orange;
   }
 }
+
+:root{
+  --arrow-width: 60px;
+}
+
+
+#prevSlide, #nextSlide{
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: var(--arrow-width);
+  border: none;
+
+  @media (max-width: 767px){
+    height: 50px;
+    width: 50vw;
+    top: auto;
+    padding-right: 60px;
+    bottom: 20px;
+  }
+
+  svg{
+    transition: .3s ease-in-out;
+
+    .svgProperty{
+      fill: $orange;
+      transition: .3s;
+    }
+  }
+
+  &:hover{
+    svg{
+      @media (min-width: 1024px){
+        transform: translateX(10px);
+        .svgProperty{
+          fill: $darkBlue;
+        }
+      }
+    }
+  }
+}
+
+.clicked{
+
+  svg{
+    transform: translateX(25px) !important;
+
+    .svgProperty{
+      fill: $yellow !important;
+    }
+  }
+}
+
+#prevSlide{
+  left: calc(var(--arrow-width) * (-1));
+  transform: rotate(180deg);
+
+  @media (max-width: 767px){
+    left: -25px;
+  }
+}
+
+#nextSlide{
+  right: calc(var(--arrow-width) * (-1));
+
+  @media (max-width: 767px){
+    right: -25px;
+  }
+}
+

@@ -13,6 +13,11 @@ carouselSlide.style.transform = "translateX(" + (-size * counter) + "px";
 nextBtn.addEventListener("click", () => {
     if (counter >= carouselDiv.length - 1) return;
 
+    nextBtn.classList.add("clicked");
+    setTimeout(() => {
+        nextBtn.classList.remove("clicked");
+    }, 350);
+
     carouselDiv[counter].classList.remove("active");
     counter++;
     carouselDiv[counter].classList.add("active");
@@ -23,6 +28,11 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
     if (counter <= 0) return;
 
+    prevBtn.classList.add("clicked");
+    setTimeout(() => {
+        prevBtn.classList.remove("clicked");
+    }, 350);
+
     carouselDiv[counter].classList.remove("active");
     counter--;
     carouselDiv[counter].classList.add("active");
@@ -32,6 +42,7 @@ prevBtn.addEventListener("click", () => {
 
 carouselSlide.addEventListener("transitionend", () => {
     if (counter <= 0 || counter >= carouselDiv.length) return;
+
 
     carouselDiv[counter - 1].classList.remove("active");
     carouselDiv[counter + 1].classList.remove("active");
