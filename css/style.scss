@@ -1,13 +1,18 @@
-@import "./variables";
-@import "scss/mixins";
-@import "scss/typography";
+// utils
+@import "scss/utils/variables";
+@import "scss/utils/mixins";
+@import "scss/utils/typography";
 
-@import "scss/buttons";
+// components
+@import "scss/components/buttons";
+@import "scss/components/form";
 
+// page
 @import "scss/nav";
 @import "scss/layout";
 @import "scss/carousel";
 @import "scss/pathBoxes";
 @import "scss/citace";
+@import "scss/kontakt";
 
 

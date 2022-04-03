@@ -180,7 +180,7 @@
             </div>
 
             <button id="prevSlide">
-                <svg width="100%" height="auto" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                <svg width="100%" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                     <g class="svgProperty" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" >
                         <path  d="M1179 4027 c-64 -34 -102 -93 -107 -166 -8 -112 -33 -83 601 -718 l582 -583 -582 -583
                         c-634 -635 -609 -606 -601 -718 8 -110 93 -189 206 -189 29 0 70 7 90 17 42 18 1314 1280 1365 1353
@@ -192,7 +192,7 @@
                 </svg>
             </button>
             <button id="nextSlide">
-                <svg width="100%" height="auto" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                <svg width="100%" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                     <g class="svgProperty" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" >
                         <path  d="M1179 4027 c-64 -34 -102 -93 -107 -166 -8 -112 -33 -83 601 -718 l582 -583 -582 -583
                         c-634 -635 -609 -606 -601 -718 8 -110 93 -189 206 -189 29 0 70 7 90 17 42 18 1314 1280 1365 1353
@@ -260,40 +260,42 @@
     </section>
 
 
+
+
+
     <section class="kontakt" id="kontakt">
         <h2>Neváhejte napsat</h2>
-        <form action="post">
+        <form action="post" id="kontaktForm">
 
             <div class="content--left">
                 <label for="nameInput">
                     Jméno
                 </label>
-                <input type="text" id="nameInput" placeholder="vložte jméno">
+                <input type="text" id="nameInput" data-required="Jméno" data-input="name" placeholder="vložte jméno">
 
                 <label for="emailInput">
                     Email
                 </label>
-                <input type="email" id="emailInput" placeholder="vložte e-mail">
+                <input type="email" id="emailInput" data-required="E-mail"  placeholder="vložte e-mail">
 
                 <label for="phoneInput">
                     Telefon
                 </label>
                 <input type="tel" id="phoneInput" placeholder="vložte telefon">
-
-                <button type="submit">
-                    <span class="btn btn--submit">
-                        Odeslat
-                    </span>
-                </button>
             </div>
 
             <div class="content--right">
                 <label for="message">
                     Zpráva
                 </label>
-                <textarea id="message" cols="30" rows="10" placeholder="vložte text">
-                </textarea>
+                <textarea id="message" cols="30" rows="10" data-required="Zpráva"  placeholder="vložte text"></textarea>
             </div>
+
+            <button type="submit" class="formSubmit">
+                    <span class="btn btn--submit">
+                        Odeslat
+                    </span>
+            </button>
         </form>
     </section>
 </div>
@@ -353,6 +355,6 @@
 
 <script src="js/carousel.js"></script>
 <script src="js/pathBoxes.js"></script>
-<script src="js/app.js"></script>
+<script type="module" src="js/app.js"></script>
 </body>
 </html>

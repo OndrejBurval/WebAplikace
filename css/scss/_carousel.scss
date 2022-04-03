@@ -109,6 +109,7 @@
 
 
 #prevSlide, #nextSlide{
+  cursor: pointer;
   background-color: transparent;
   position: absolute;
   top: 0;
@@ -126,6 +127,9 @@
 
   svg{
     transition: .3s ease-in-out;
+    @media (max-width: 767px){
+      height: 50px;
+    }
 
     .svgProperty{
       fill: $orange;

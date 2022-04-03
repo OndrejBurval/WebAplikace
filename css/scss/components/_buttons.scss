@@ -58,6 +58,7 @@ $defBorderRadius : 40px;
         background: #005f90;
         border-color: #005f90;
         color: $orange;
+        margin-right: 0;
 
         &:hover{
             background: transparent;
@@ -67,4 +68,7 @@ $defBorderRadius : 40px;
 
 }
 
-
+button{
+    background: transparent;
+    border: none;
+}

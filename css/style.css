@@ -131,10 +131,111 @@ p {
   background: #005f90;
   border-color: #005f90;
   color: #fdc500;
+  margin-right: 0;
 }
 .btn--submit:hover {
   background: transparent;
   color: #fdc500;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+form {
+  background: #003f88;
+  border-radius: 70px 70px 0px 70px;
+  padding: 40px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  form {
+    padding: 30px 25px 15px 25px;
+  }
+}
+@media (max-width: 767px) {
+  form {
+    border-radius: 35px 35px 0px 35px;
+    padding: 15px 15px 5px 15px;
+  }
+}
+form label {
+  font-family: "Playfair Display", Arial;
+  color: #ffd500;
+}
+form input, form textarea, form .formValidationError {
+  border: none;
+  background: #005f90;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px 30px 0px 30px;
+  margin-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  form input, form textarea, form .formValidationError {
+    margin-bottom: 25px;
+  }
+}
+form input::placeholder, form textarea::placeholder, form .formValidationError::placeholder {
+  color: white;
+  opacity: 0.75;
+}
+@media (min-width: 1024px) {
+  form input, form textarea, form .formValidationError {
+    padding-block: 16px;
+  }
+}
+form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+@media (min-width: 1024px) {
+  form textarea {
+    margin-bottom: 15px;
+  }
+}
+form .content--left, form .content--right {
+  display: flex;
+  flex-direction: column;
+}
+form button {
+  width: 100%;
+  place-self: end;
+  height: min-content;
+}
+form button span {
+  cursor: pointer;
+  width: 100% !important;
+}
+@keyframes msgSlide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+form .formValidationError {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 3;
+  animation: msgSlide 1s;
+  transform-origin: 100% 100%;
+}
+form .formValidationError::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  width: 30px;
+  height: 30px;
+  top: -10px;
+  left: 50%;
+  background: #f18484;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
 }
 
 nav {
@@ -482,6 +583,7 @@ body {
 }
 
 #prevSlide, #nextSlide {
+  cursor: pointer;
   background-color: transparent;
   position: absolute;
   top: 0;
@@ -500,6 +602,11 @@ body {
 }
 #prevSlide svg, #nextSlide svg {
   transition: 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  #prevSlide svg, #nextSlide svg {
+    height: 50px;
+  }
 }
 #prevSlide svg .svgProperty, #nextSlide svg .svgProperty {
   fill: #fdc500;
@@ -660,7 +767,6 @@ body {
   top: 0px;
   left: 0;
   background: #fdc500;
-  opacity: 0.8 !important;
   transition: transform 0.3s;
   pointer-events: none;
   z-index: 1;
@@ -774,6 +880,33 @@ body {
     max-width: 400px;
     width: 100%;
     max-height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .kontakt form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .kontakt form .content--left {
+    grid-row: 1/4;
+  }
+}
+@media (min-width: 768px) {
+  .kontakt form .content--right {
+    grid-row: 1/5;
+  }
+  .kontakt form .content--right textarea {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .kontakt form button {
+    grid-row: 4/5;
   }
 }
 

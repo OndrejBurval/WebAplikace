@@ -12,7 +12,7 @@ body.append(cursorDiv);
 
 pathBoxesDiv.addEventListener("mouseover", (e) => {
     cursorDiv.style.transform = "scale(1)";
-    cursorDiv.style.opacity= "1";
+    cursorDiv.style.opacity= "0.8";
 
     body.addEventListener("mousemove", (ev) => {
         let calcX = ev.pageX - 25;

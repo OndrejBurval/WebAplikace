@@ -1,13 +1,9 @@
-const navOpenBtn = document.querySelector(".mobile-nav-open");
-const navCloseBtn = document.querySelector(".mobile-nav-close");
+import { Nav } from "./modules/Nav.js";
+import { Form } from "./modules/Form.js";
 
-const navBar = document.querySelector(".nav--inner ul");
 
-navOpenBtn.addEventListener("click", (e) => {
-    navBar.style.transition = ".3s ease-in-out";
-    navBar.style.transform = "translateX(0px)";
-})
+const navigace = new Nav(".mobile-nav-open", ".mobile-nav-close", ".nav--inner ul")
+navigace.init()
 
-navCloseBtn.addEventListener("click", (e) => {
-    navBar.style.transform = "translateX(85vw)";
-})
+const form = new Form("#kontaktForm")
+form.validateRequired()
