@@ -25,7 +25,8 @@ body{
     @include before{
         z-index: 1;
         background: $yellow;
-        border-radius: 50% 50% 0 50%;
+        @include borderRadius(50%);
+
         bottom: 0;
         top: auto;
         left: 50%;

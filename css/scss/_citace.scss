@@ -1,7 +1,24 @@
 .citace{
-  
+  display: grid;
+
+
+  max-width: 875px;
+  margin-inline: auto;
+  margin-bottom: 300px;
+
+  @media (min-width: 1024px) and (max-width: 1500px){
+    margin-bottom: 150px;
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px){
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: 768px){
+    grid-template-columns: 1.5fr 3fr;
+  }
   @media (max-width: 767px){
-      display: grid;
       grid-template-rows: auto auto;
       grid-template-columns: auto auto;
       margin-bottom: 100px;
@@ -9,6 +26,7 @@
 
 
   .content--left{
+
     @media (max-width: 767px){
         grid-row: 2 / 3;
         grid-column: 1 / 2;
@@ -22,11 +40,21 @@
 
     padding: 50px 30px;
     margin-inline: 10px;
-    margin-top: -70px;
 
-    border-radius: 70px 100px 0px 70px;
+    border-radius: 70px 100px 0 70px;
+
+    @media (min-width: 768px){
+      place-self: center;
+      height: min-content;
+
+      padding: 30px 100px 30px 150px;
+      margin-left: -130px;
+
+    }
 
     @media (max-width: 767px){
+      margin-top: -70px;
+
       grid-row: 1 / 3;
       grid-column: 1 / 3;
       padding-bottom: 120px;
@@ -81,20 +109,31 @@
   .img--container{
     position: relative;
     z-index: 2;
-    max-height: 350px;
-    max-width: 350px;
 
     display: grid;
     place-items: center;
-    overflow: hidden;
     clip-path: circle(65% at 60% 35%);
 
+    @media (min-width: 768px){
+      max-height: 400px;
+      max-width: 400px;
+      margin-right: 20px;
+    }
+
     @media (max-width: 767px){
+      overflow: hidden;
+
+      max-height: 350px;
+      max-width: 350px;
       margin-bottom: -80px;
       margin-left: -10px;
     }
 
     &::before{
+
+      @media (min-width: 768px){
+        width: 110% !important;
+      }
       @media (max-width: 767px){
         height: auto;
         width: 100%;
@@ -104,9 +143,10 @@
   }
 
   img{
-    margin-top: 150px;
 
     @media (max-width: 767px){
+      margin-top: 150px;
+
       max-width: 400px;
       width: 100%;
       max-height: 300px;

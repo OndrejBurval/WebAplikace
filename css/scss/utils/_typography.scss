@@ -24,7 +24,7 @@ a{
 // remove list breaks
 .nav--links, .pathBox{
     li::marker{
-        font-size: 0px;
+        font-size: 0;
     }
 }
 
@@ -45,7 +45,7 @@ ul:not(.nav--links){
             border: solid $lightBlue 2px;
             background: transparent;
             top: 9px;
-            border-radius: 20px 20px 0px 20px;
+            border-radius: 20px 20px 0 20px;
         }
     }
 }
@@ -67,6 +67,10 @@ h2{
     @media screen and (min-width: 1024px) {
         font-size: 50px;
     }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        font-size: 40px;
+    }
     
     @media (max-width: 767px){
         font-size: 35px;
@@ -76,6 +80,13 @@ h2{
 h3{
     @media screen and (min-width: 1024px) {
         font-size: 40px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
+        font-size: 35px;
+    }
+
+    @media (max-width: 767px){
+        font-size: 30px;
     }
 }
 

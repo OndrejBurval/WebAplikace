@@ -31,3 +31,8 @@
 	max-width: 100vw;
 	left: calc(-50vw + 50%);
 }
+
+
+@mixin borderRadius($value){
+	border-radius: $value $value 0 $value;
+}

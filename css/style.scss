@@ -3,16 +3,20 @@
 @import "scss/utils/mixins";
 @import "scss/utils/typography";
 
+
 // components
 @import "scss/components/buttons";
 @import "scss/components/form";
+@import "scss/components/carousel";
+
 
 // page
 @import "scss/nav";
 @import "scss/layout";
-@import "scss/carousel";
 @import "scss/pathBoxes";
 @import "scss/citace";
 @import "scss/kontakt";
+@import "scss/sluzby";
+@import "scss/reference";
 
 

@@ -44,7 +44,8 @@
   min-width: 100%;
   transform: scale(.6);
   transition: .3s;
-  border-radius: 80px 80px 0px 80px;
+  @include borderRadius(80px);
+
   z-index: -1;
 
   @media (max-width: 767px){

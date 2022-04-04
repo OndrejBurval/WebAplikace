@@ -9,7 +9,7 @@ $defBorderRadius : 40px;
     background: $lightBlue;
 
     border: solid $lightBlue 2px;
-    border-radius: $defBorderRadius $defBorderRadius 0px $defBorderRadius;
+    @include borderRadius($defBorderRadius);
 
 
     transition: .25s;
