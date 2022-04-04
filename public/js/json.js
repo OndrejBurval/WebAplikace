@@ -5,7 +5,7 @@ const dog = {
 }
 
 
-const saveData = (data) => {
+export const saveData = (data) => {
     let fs = require("fs")
 
     const jsonData = JSON.stringify(data)

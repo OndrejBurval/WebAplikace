@@ -8,26 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <title> Ondřej Buřval Personal </title>
 </head>
 <body>
 <nav>
+
+    <button class="json"> save json </button>
+
     <div class="nav--inner">
         <a href="#uvod" class="logo">
             <picture>
-                <source media="(min-width:768px)" srcset="img/logo.svg">
-                <img src="img/logo-noText.svg" alt="Logo společnosti.svg">
+                <source media="(min-width:768px)" srcset="../public/img/logo.svg">
+                <img src="../public/img/logo-noText.svg" alt="Logo společnosti.svg">
             </picture>
         </a>
 
         <a class="mobile-nav-open">
-            <img src="img/icons/menu.svg" alt="Ikonka menu.svg">
+            <img src="../public/img/icons/menu.svg" alt="Ikonka menu.svg">
         </a>
 
         <ul class="nav--links">
             <li class="mobile-nav-close">
-                <img src="img/icons/close.svg" alt="Ikonka menu.svg">
+                <img src="../public/img/icons/close.svg" alt="Ikonka menu.svg">
             </li>
             <li class="nav--item">  <a href="#uvod"> úvod </a></li>
             <li class="nav--item">  <a href="#sluzby"> služby </a></li>
@@ -67,7 +70,7 @@
 
         <div class="content--right">
             <div class="img--container beforeBG mainIMG">
-                <img src="img/character.svg" alt="Postava.svg">
+                <img src="../public/img/character.svg" alt="Postava.svg">
             </div>
         </div>
     </section>
@@ -105,7 +108,7 @@
     <section class="citace">
         <div class="content--left">
             <div class="img--container beforeBG">
-                <img src="img/character.svg" alt="Postava.svg">
+                <img src="../public/img/character.svg" alt="Postava.svg">
             </div>
         </div>
         <div class="content--right">
@@ -226,7 +229,7 @@
             </div>
             <div class="img--container">
                 <div class="img--inner">
-                    <img src="img/reference/hanaknizkova.jpg" alt="Ukázka reference">
+                    <img src="../public/img/reference/hanaknizkova.jpg" alt="Ukázka reference">
                 </div>
             </div>
 
@@ -254,7 +257,7 @@
 
             <div class="img--container">
                 <div class="img--inner">
-                    <img src="img/reference/hanaknizkova.jpg" alt="Ukázka reference">
+                    <img src="../public/img/reference/hanaknizkova.jpg" alt="Ukázka reference">
                 </div>
             </div>
 
@@ -286,10 +289,7 @@
                     Telefon
                 </label>
                 <input type="tel" id="phoneInput" placeholder="vložte telefon">
-                <label>
-                    Telefon
-                </label>
-                <input type="tel" id="phoneInput2" placeholder="vložte telefon">
+
             </div>
 
             <div class="content--right">
@@ -361,8 +361,8 @@
     </div>
 </footer>
 
-<script src="js/carousel.js"></script>
-<script src="js/pathBoxes.js"></script>
-<script type="module" src="js/app.js"></script>
+<script src="../public/js/carousel.js"></script>
+<script src="../public/js/pathBoxes.js"></script>
+<script type="module" src="../public/js/app.js"></script>
 </body>
 </html>
