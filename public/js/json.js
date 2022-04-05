@@ -5,8 +5,8 @@ const dog = {
 }
 
 
-export const saveData = (data) => {
-    let fs = require("fs")
+const saveData = (data) => {
+    const fs = require("fs")
 
     const jsonData = JSON.stringify(data)
     fs.writeFile("./data/sampleData.json", jsonData, function (err){

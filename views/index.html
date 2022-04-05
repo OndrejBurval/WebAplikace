@@ -1,44 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/style.css">
-    <title> Ondřej Buřval Personal </title>
-</head>
-<body>
-<nav>
+<%- include('layout/header.html') -%>
+<%- include('layout/navigation.html') -%>
 
-    <button class="json"> save json </button>
 
-    <div class="nav--inner">
-        <a href="#uvod" class="logo">
-            <picture>
-                <source media="(min-width:768px)" srcset="../public/img/logo.svg">
-                <img src="../public/img/logo-noText.svg" alt="Logo společnosti.svg">
-            </picture>
-        </a>
-
-        <a class="mobile-nav-open">
-            <img src="../public/img/icons/menu.svg" alt="Ikonka menu.svg">
-        </a>
-
-        <ul class="nav--links">
-            <li class="mobile-nav-close">
-                <img src="../public/img/icons/close.svg" alt="Ikonka menu.svg">
-            </li>
-            <li class="nav--item">  <a href="#uvod"> úvod </a></li>
-            <li class="nav--item">  <a href="#sluzby"> služby </a></li>
-            <li class="nav--item">  <a href="#reference"> reference</a></li>
-            <li class="nav--item navBTN">  <a href="#kontakt"> <span class="btn btn--primary"> kontakt </span></a></li>
-        </ul>
-    </div>
-</nav>
 
 <div class="site__wrapper">
 
@@ -308,61 +271,6 @@
     </section>
 </div>
 
-<footer>
-    <div class="footer--inner">
-        <div class="content--left">
-            <h3>
-                Zajímavé stránky
-            </h3>
 
-            <ul>
-                <li><a href="#uvod"> úvod </a></li>
-                <li><a href="#sluzby"> služby </a></li>
-                <li><a href="#reference"> reference </a></li>
-                <li><a href="#kontakt"> kontakt</a></li>
-            </ul>
-        </div>
+<%- include('layout/footer.html') -%>
 
-        <div class="content--right">
-
-            <div class="firma">
-                <h3>
-                    Logoipsum a. s.
-                </h3>
-
-                <p>
-                    Čáslavská 54, <br />
-                    Chrudim 527 56
-                </p>
-
-                <a href="tel:+420777777777" class="icon--phone">
-                    +420 777 777 777
-                </a>
-
-                <a href="mailto:email@seznam.cz" class="icon--mail">
-                    email@seznam.cz
-                </a>
-            </div>
-
-            <div class="img">
-                <img src="img/logo-noText.svg" alt="Logo firmy.svg">
-
-                <a href="https://www.facebook.com/" class="icon--facebook">
-                    fb
-                </a>
-
-                <a href="https://www.instagram.com/" class="icon--instagram">
-                    ig
-                </a>
-            </div>
-
-
-        </div>
-    </div>
-</footer>
-
-<script src="../public/js/carousel.js"></script>
-<script src="../public/js/pathBoxes.js"></script>
-<script type="module" src="../public/js/app.js"></script>
-</body>
-</html>

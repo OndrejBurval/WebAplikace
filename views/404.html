@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>404 page</title>
-</head>
-<body>
-<h1> 404 Stránka nenalezena </h1>
+<%- include('layout/header.html') -%>
+<%- include('layout/navigation.html') -%>
 
-</body>
-</html>
+<section class="page--404">
+    <style>
+        .page--404{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .content--404{
+            display: grid;
+            place-items: center;
+        }
+    </style>
+
+    <div class="content--404">
+        <img src="../public/img/logo-404.svg" alt="Logo">
+        <h1> 404 Stránka nenalezena </h1>
+    </div>
+</section>
+
+
+<%- include('layout/footer.html') -%>

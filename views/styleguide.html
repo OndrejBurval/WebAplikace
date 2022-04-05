@@ -1,44 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/style.css">
-    <title>Styleguide</title>
-</head>
-<body class="styleguide">
+<%- include('layout/header.html') -%>
+<%- include('layout/navigation.html') -%>
 
-
-    <style>
-        @media screen and (min-width: 768px) {
-            section{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                height: 100vh;
-            }
+<style>
+    @media screen and (min-width: 768px) {
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
         }
-    </style>
+    }
+</style>
 
 
 
-    <nav>
-        <div class="nav--inner">
-            <a href="#uvod" class="logo">
-                <img src="../public/img/logo.svg" alt="Logo společnosti.svg">
-            </a>
-
-            <ul class="nav--links">
-                <li class="nav--item">  <a href="#uvod"> úvod </a></li>
-                <li class="nav--item">  <a href="#sluzby"> služby </a></li>
-                <li class="nav--item">  <a href="#reference"> reference</a></li>
-                <li class="nav--item">  <a href="#kontakt"> <span class="btn btn--primary"> kontakt </span> </a></li>
-            </ul>
-        </div>
-    </nav>
 
     <div class="site__wrapper">
         <section>
@@ -100,6 +74,7 @@
     
         </section>
     </div>
-    
-</body>
-</html>
+
+
+
+<%- include('layout/footer.html') -%>
