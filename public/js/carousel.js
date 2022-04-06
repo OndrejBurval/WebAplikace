@@ -1,4 +1,4 @@
-
+// záloha- původní carousel
 const carouselSlide = document.querySelector(".carousel-slide");
 const carouselDiv = document.querySelectorAll(".carousel-slide .slide");
 
@@ -50,7 +50,4 @@ prevBtn.addEventListener("click", () => {
 
 carouselSlide.addEventListener("transitionend", () => {
     if (counter <= 0 || counter >= carouselDiv.length) return;
-
-
-
 })

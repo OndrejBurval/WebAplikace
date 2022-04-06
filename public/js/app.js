@@ -1,15 +1,15 @@
 import { Nav } from "./modules/Nav.js";
 import { Form } from "./modules/Form.js";
 import { qs } from "./utils/utils.js";
-
+import { Carousel} from "./modules/Carousel.js";
 
 
 const navigace = new Nav(".mobile-nav-open", ".mobile-nav-close", ".nav--inner ul")
 navigace.init()
 
-
 const form = new Form("#kontaktForm")
 form._validateRequired()
+form._testSubmited()
 
-const btn = qs(".json")
-
+const carousel = new Carousel(".carousel-container")
+carousel.init()

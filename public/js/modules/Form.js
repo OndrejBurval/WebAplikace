@@ -8,9 +8,6 @@ export class Form{
 
         this.valid = true;
         this.preventDefault()
-
-        this.inputValueArray = this.createInputValueArray()
-        console.log(this.inputValueArray)
     }
 
 
@@ -43,10 +40,14 @@ export class Form{
 
 
     // Po validním odeslání formu logne hodnoty
-    _logSubmited = () => {
+    _testSubmited = () => {
         if (this.valid){
             this._submit.addEventListener("click", () => {
-                this.logComponents()
+                this.preventDefault()
+                //this.logComponents()
+
+                this.inputValueArray = this.createInputValueArray()
+                console.log(this.inputValueArray)
                 this.clearInputs()
                 this.clearTextareas()
             })
