@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Logo"
+   width="116.619"
+   height="70.411"
+   viewBox="0 0 116.619 70.411"
+   version="1.1"
+   sodipodi:docname="logo-404.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata34">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs32" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="762"
+     inkscape:window-height="480"
+     id="namedview30"
+     showgrid="false"
+     inkscape:zoom="2.5510422"
+     inkscape:cx="-26.827661"
+     inkscape:cy="33.894936"
+     inkscape:window-x="2527"
+     inkscape:window-y="351"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Logo" />
+  <path
+     id="Path_21"
+     data-name="Path 21"
+     d="M0,35.206A35.206,35.206,0,0,1,35.206,0H81.413a35.206,35.206,0,0,1,35.206,35.206V70.411H35.206A35.206,35.206,0,0,1,0,35.206Z"
+     fill="#003f88" />
+  <rect
+     id="Rectangle_20"
+     data-name="Rectangle 20"
+     width="90.215"
+     height="44.007"
+     rx="10"
+     transform="translate(13.202 13.202)"
+     fill="#a5b4fc" />
+  <circle
+     id="Ellipse_9"
+     data-name="Ellipse 9"
+     cx="11.002"
+     cy="11.002"
+     transform="translate(24.204,24.204)"
+     r="11.002" />
+  <circle
+     id="Ellipse_10"
+     data-name="Ellipse 10"
+     cx="38.056938"
+     cy="35.410957"
+     r="2.2"
+     fill="#ffffff" />
+  <circle
+     id="Ellipse_11"
+     data-name="Ellipse 11"
+     cx="11.002"
+     cy="11.002"
+     r="11.002"
+     transform="translate(72.612 24.204)" />
+  <circle
+     id="Ellipse_12"
+     data-name="Ellipse 12"
+     cx="82.543976"
+     cy="35.410961"
+     r="2.2"
+     fill="#ffffff" />
+  <path
+     style="fill:#a5b4fc;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="m 20.089828,33.025718 c 0,0 22.931804,-5.585953 25.479783,-10.58391 C 48.117589,17.443851 27.733763,19.89383 27.733763,19.89383 Z"
+     id="path42" />
+  <circle
+     id="Ellipse_9-5"
+     data-name="Ellipse 9"
+     cx="-83.496185"
+     cy="35.285015"
+     r="11.002"
+     transform="scale(-1,1)" />
+  <circle
+     id="Ellipse_10-7"
+     data-name="Ellipse 10"
+     cx="-80.645248"
+     cy="35.489975"
+     r="2.2"
+     fill="#ffffff"
+     transform="scale(-1,1)" />
+  <path
+     style="fill:#a5b4fc;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 98.612356,33.104736 c 0,0 -22.931804,-5.585953 -25.479783,-10.58391 -2.547978,-4.997957 17.835848,-2.547978 17.835848,-2.547978 z"
+     id="path42-9" />
+</svg>
