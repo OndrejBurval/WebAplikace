@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -41,3 +45,20 @@ body{
     }
 }
 
+
+
+// gap
+hr{
+    border: none;
+    height: 100px;
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        height: 120px;
+    }
+    @media (min-width: 1024px) and (max-width: 1500px){
+        height: 150px;
+    }
+    @media (min-width: 1500px){
+        height: 200px;
+    }
+}

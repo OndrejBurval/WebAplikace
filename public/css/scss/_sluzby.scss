@@ -1,3 +1,38 @@
 .sluzby{
 
+
+  .carousel-container{
+    // assets
+    .asset{
+      z-index: 5 !important;
+
+      &:first-child{
+        inset: auto 80px -110px auto;
+        z-index: 20;
+
+        @media (min-width: 768px) and (max-width: 1023px){
+          right: -30px;
+        }
+        @media (max-width: 767px){
+          inset: auto auto 30px -90px;
+          width: 150px;
+        }
+      }
+
+      &--5{
+        inset: auto auto -100px 120px;
+        width: 100px;
+
+        @media (min-width: 768px) and (max-width: 1023px){
+          left: -10px;
+        }
+        @media (max-width: 767px){
+          inset: auto -50px -90px auto;
+          opacity: .8;
+        }
+      }
+    }
+  }
+
+
 }

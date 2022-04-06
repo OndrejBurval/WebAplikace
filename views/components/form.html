@@ -1,0 +1,36 @@
+<h2>Neváhejte napsat</h2>
+<form method="post" id="kontaktForm">
+
+  <div class="content--left">
+    <label for="nameInput">
+      Jméno
+    </label>
+    <input type="text" id="nameInput" data-required="Jméno" data-input="name" placeholder="vložte jméno">
+
+    <label for="emailInput">
+      Email
+    </label>
+    <input type="email" id="emailInput" data-required="E-mail"  placeholder="vložte e-mail">
+
+    <label for="phoneInput">
+      Telefon
+    </label>
+    <input type="tel" id="phoneInput" placeholder="vložte telefon">
+
+
+
+  </div>
+
+  <div class="content--right">
+    <label for="message">
+      Zpráva
+    </label>
+    <textarea id="message" cols="30" rows="10" data-required="Zpráva"  placeholder="vložte text"></textarea>
+  </div>
+
+  <button type="submit" class="formSubmit">
+                    <span class="btn btn--submit">
+                        Odeslat
+                    </span>
+  </button>
+</form>

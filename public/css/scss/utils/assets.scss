@@ -1,0 +1,39 @@
+.asset{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 220px;
+  pointer-events: none;
+
+  &--1{ @include bg("../img/assets/flowerType1.svg", $size: contain) }
+  &--2{ @include bg("../img/assets/flowerType2.svg", $size: contain) }
+  &--3{ @include bg("../img/assets/flowerType3.svg", $size: contain); width: 200px;}
+  &--4{ @include bg("../img/assets/flowerType4.svg", $size: contain); width: 90px; }
+  &--5{ @include bg("../img/assets/flowerType5.svg", $size: contain); width: 130px; }
+
+  &--lamp{ @include bg("../img/assets/lamp.svg", $size: contain); }
+  &--clock{ @include bg("../img/assets/clock.svg", $size: contain); width: 100px; height: 150px;}
+}
+
+
+.mouseSVG{
+  position: none;
+  z-index: 10;
+  position: absolute;
+  inset: auto auto 15px 35px;
+  width: 50px;
+  height: 50px;
+
+  #mouseSvgDot1,
+  #mouseSvgDot2,
+  #mouseSvgDot3,
+  #mouseSvgArrow{
+    animation: svgScrollAnim 1.5s ease-in-out infinite;
+  }
+  #mouseSvgDot2{ animation-delay: .1s;}
+  #mouseSvgDot3{ animation-delay: .2s;}
+  #mouseSvgArrow{ animation-delay: .3s;}
+}
+
+

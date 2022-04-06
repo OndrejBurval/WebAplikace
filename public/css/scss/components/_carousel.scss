@@ -1,10 +1,6 @@
 .sluzby{
   position: relative;
 
-  @media (max-width: 767px){
-    margin-bottom: 100px;
-  }
-
   @include before{
     width: 50%;
     left: -60%;
@@ -40,12 +36,9 @@
 
 .slide{
   position: relative;
-  background: $yellow;
   min-width: 100%;
   transform: scale(.6);
   transition: .3s;
-  @include borderRadius(80px);
-
   z-index: -1;
 
   @media (max-width: 767px){
@@ -64,40 +57,63 @@
 
 
   &--inner{
-    width: 80%;
+    position: relative;
+    transition: .3s;
+    @include borderRadius(80px);
+    background: $yellow;
+    width: 100%;
+    max-width: 700px;
     margin: auto;
-    padding-block: 50px;
+    padding: 60px 100px;
     
     @media (max-width: 767px){
-        padding-block: 50px 70px;
+      padding-block: 50px 70px;
+      padding-inline: 35px;
     }
   }
 
   p{
     color: white;
+
+    @media (max-width: 767px){
+      text-align: center;
+    }
   }
 
   h2{
-    position: absolute;
     color: $lightBlue;
 
     @media (min-width: 768px){
       top: -50px;
+      left: 0;
+      position: absolute;
+
     }
-    
+
     @media (max-width: 767px){
-      font-size: 30px;
-      top: -25px;
+      text-align: center;
+      position: relative;
+
+      @include before{
+        inset: auto auto -5px 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 70%;
+        background: $orange;
+      }
     }
   }
 }
 
 .active{
+
   position: relative;
-  background: $lightBlue;
-  min-width: 100%;
   min-height: 200px;
   transform: scale(1);
+
+  .slide--inner{
+    background: $lightBlue;
+  }
 
   h2{
     color: $orange;
@@ -162,7 +178,7 @@
 }
 
 #prevSlide{
-  left: calc(var(--arrow-width) * (-1));
+  left: 0;
   transform: rotate(180deg);
 
   @media (max-width: 767px){
@@ -171,10 +187,11 @@
 }
 
 #nextSlide{
-  right: calc(var(--arrow-width) * (-1));
+  right: 0;
 
   @media (max-width: 767px){
     right: -25px;
   }
 }
+
 

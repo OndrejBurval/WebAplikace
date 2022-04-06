@@ -1,6 +1,7 @@
 .reference{
   position: relative;
 
+  @include blockPadding();
 
   h3{
 
@@ -11,50 +12,43 @@
 
 
   .img{
+
     &--container{
-      position: relative;
-      padding-block: 50px;
-
-
-
-      @media (max-width: 767px){
-        padding-block: 30px;
-      }
-
-
-    @include before{
-      z-index: -1;
+      perspective: 1500px;
       background: $orange;
-      @include borderRadius(300px);
-
-
+      @include borderRadius(100px);
+      padding-block: 10px;
     }
 
-    }
 
 
     &--inner{
       aspect-ratio: 16 / 9;
-      max-height: 400px;
       margin-inline: auto;
-      width: 80%;
+      width: 100%;
       overflow-x: hidden;
+      //border: solid $orange 30px;
+      //@include borderRadius(180px);
+      @include borderRadius(30px);
 
-      @include borderRadius(150px);
+      @media (min-width: 768px) and (max-width: 1023px){
+        border-width: 25px;
 
+      }
+      @media (max-width: 767px){
+          border-width: 20px;
+      }
+      
 
 
       // skryje scroll bar
       &::-webkit-scrollbar { display: none; }
       & { -ms-overflow-style: none;  /* IE and Edge */ scrollbar-width: none;  /* Firefox */ }
 
-
-
-
       img{
         width: 100%;
+        cursor: s-resize;
       }
-
     }
 
 
@@ -73,25 +67,30 @@
 
 
   .ref{
+    &:not(:last-child){
+      margin-bottom: 80px;
+    }
 
 
     @media (min-width: 768px){
-        display: grid;
+      display: grid;
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, min-content);
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, min-content);
       column-gap: 30px;
-
 
       .img--container{
         grid-row: 1 / 3;
       }
     }
 
-
     &:nth-child(even){
       .img--container{
         grid-column: 2 / 3;
+
+        .img--inner{
+          transform: rotateY(-35deg) translateX(-30px);
+        }
       }
     }
 
@@ -99,9 +98,15 @@
       .img--container{
         grid-column: 1 / 2;
       }
+
+      .img--inner{
+        transform: rotateY(35deg) translateX(30px);
+      }
+
+      .mouseSVG{
+        inset: auto 35px 15px auto;
+      }
     }
-
-
 
   }
 
