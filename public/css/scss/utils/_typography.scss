@@ -33,7 +33,7 @@ ul:not(.nav--links){
 
     li{
         position: relative;
-        padding-left: 20px;
+        padding-left: 30px;
 
         &::marker{
             font-size: 0;
@@ -45,7 +45,8 @@ ul:not(.nav--links){
             border: solid $lightBlue 2px;
             background: transparent;
             top: 9px;
-            border-radius: 20px 20px 0 20px;
+            @include borderRadius(20px);
+
         }
     }
 }

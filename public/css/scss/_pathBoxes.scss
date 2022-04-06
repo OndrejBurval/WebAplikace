@@ -1,19 +1,5 @@
 .pathBoxes{
   position: relative;
-  margin-block: 100px 300px;
-
-  @media (min-width: 1024px) and (max-width: 1500px){
-    margin-block: 100px 180px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px){
-    margin-block: 100px 100px;
-
-  }
-  
-  @media (max-width: 767px){
-      margin-block: 150px 100px;
-  }
 
   ul{
     display: flex;

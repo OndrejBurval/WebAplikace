@@ -1,7 +1,24 @@
 // Importy
 const express = require('express')
 const {request, response } = require("express")
-const { readFile, readFileSync } = require('fs')
+const fs = require("fs")
+
+
+const dataForJSON = {
+    name: "Pepé",
+    breed: "poodle",
+    color: "black"
+}
+
+const exportJSON = (data, fileName) => {
+    const jsonData = JSON.stringify(dataForJSON)
+    fs.writeFile(`./public/data/${fileName}.json`, jsonData, function (err){
+        if (err){
+            console.log(err)
+        }
+    });
+}
+//exportJSON(dataForJSON, "file")
 
 
 // Basic settings
@@ -14,18 +31,11 @@ app.engine('.html', require('ejs').__express)
 // určuje render koncovku .html
 app.set('view engine', 'html');
 
-
 // Port Listener
 app.listen(port, () => console.log("Server spuštěn => http://localhost:"+port))
 
 // Static Files (CSS, JS, IMG)
 app.use(express.static('./'))
-
-var users = [
-    { name: 'tobi', email: 'tobi@learnboost.com' },
-    { name: 'loki', email: 'loki@learnboost.com' },
-    { name: 'jane', email: 'jane@learnboost.com' }
-];
 
 
 app.get('/', (req, res) => {

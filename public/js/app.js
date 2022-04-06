@@ -12,5 +12,4 @@ const form = new Form("#kontaktForm")
 
 const btn = qs(".json")
 
-
-import {saveData} from "./json.js";
+console.log(variable)

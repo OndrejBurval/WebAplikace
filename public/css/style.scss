@@ -1,7 +1,9 @@
 // utils
 @import "scss/utils/variables";
 @import "scss/utils/mixins";
+@import "scss/utils/keyframes";
 @import "scss/utils/typography";
+@import "scss/utils/icons";
 
 
 // components
@@ -10,9 +12,15 @@
 @import "scss/components/carousel";
 
 
+// shared
+@import "scss/shared/nav";
+@import "scss/shared/footer";
+@import "scss/shared/404";
+
+
 // page
-@import "scss/nav";
 @import "scss/layout";
+@import "scss/homepageHeader";
 @import "scss/pathBoxes";
 @import "scss/citace";
 @import "scss/kontakt";

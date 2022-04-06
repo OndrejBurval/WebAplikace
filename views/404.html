@@ -2,22 +2,15 @@
 <%- include('layout/navigation.html') -%>
 
 <section class="page--404">
-    <style>
-        .page--404{
-            display: grid;
-            place-items: center;
-            height: 100vh;
-        }
-
-        .content--404{
-            display: grid;
-            place-items: center;
-        }
-    </style>
-
     <div class="content--404">
-        <img src="../public/img/logo-404.svg" alt="Logo">
+        <a href="/">
+            <img src="../public/img/logo-404.svg" alt="Logo">
+        </a>
         <h1> 404 Stránka nenalezena </h1>
+        <p>
+            Stánku, kterou se pokoušíte navštívit se nepodařilo nalézt.
+        </p>
+        <a href="/" class="btn"> Úvodní stránka </a>
     </div>
 </section>
 

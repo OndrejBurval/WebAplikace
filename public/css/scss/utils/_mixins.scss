@@ -32,7 +32,27 @@
 	left: calc(-50vw + 50%);
 }
 
-
 @mixin borderRadius($value){
 	border-radius: $value $value 0 $value;
 }
+@mixin bg ($img, $size: cover, $repeat: no-repeat, $position: center){
+	background-image: url($img);
+	background-size: $size;
+	background-repeat: $repeat;
+	background-position: $position;
+}
+
+
+@mixin colorFillBG($color, $padding : false){
+		z-index: -10;
+		background-color: $color;
+		height: 100%;
+		position: absolute !important;
+		@include fullWidth();
+
+	@if($padding == true){
+		padding-block: 100px;
+		top: -100px;
+	}
+}
+

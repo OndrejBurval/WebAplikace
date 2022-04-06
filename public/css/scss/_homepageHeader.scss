@@ -1,0 +1,73 @@
+
+.header{
+  position: relative;
+  display: grid;
+  min-height: 550px;
+
+  margin-bottom: 50px;
+  place-items: center start;
+
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 150px);
+
+  }
+
+
+  .content--left{
+    width: 100%;
+    max-width: 425px;
+
+    @media screen and (max-width: 767px) {
+      grid-row: 2 / 3;
+    }
+  }
+
+  .content--right{
+    width: 100%;
+  }
+
+  .mainIMG{
+    display: grid;
+    place-items: center;
+
+
+
+    img{
+      max-width: 100vw;
+      height: 50vh;
+      min-height: 220px;
+
+
+
+      @media screen and (min-width: 768px) {
+        height: 60vh;
+        min-height: 400px;
+
+      }
+    }
+  }
+
+
+  .links{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+  }
+
+
+  // pozadí
+  @include after{
+    @include colorFillBG(#f5f3ee);
+
+    @media (min-width: 768px){
+      top: -10%;
+    }
+
+    @media (max-width: 767px){
+      padding-bottom: 50px;
+    }
+
+  }
+}

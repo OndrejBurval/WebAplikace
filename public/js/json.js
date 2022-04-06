@@ -4,17 +4,17 @@ const dog = {
     color: "black"
 }
 
+sayHello = () => {
+    console.log("Hello")
+}
 
-const saveData = (data) => {
-    const fs = require("fs")
-
+saveData = (fs, data) => {
     const jsonData = JSON.stringify(data)
-    fs.writeFile("./data/sampleData.json", jsonData, function (err){
+    fs.writeFile("sampleData.json", jsonData, function (err){
         if (err){
             console.log(err)
         }
     });
 }
 
-saveData(dog)
 

@@ -1,0 +1,33 @@
+.icon{
+  color: transparent;
+  width: 40px;
+  height: 40px;
+
+  &:hover{
+    animation: scaleAnim .45s;
+
+    filter: brightness(1.35);
+    transition: .5s;
+  }
+
+  &--phone, &--email{
+    padding-left: 30px;
+    transition: .3s;
+
+    &:hover{
+      filter: brightness(1.35);
+      padding-left: 45px;
+    }
+
+  }
+
+
+  &--phone{ @include bg("../img/icons/icon--phone.svg", $size: auto 20px, $position: left); }
+  &--email{ @include bg("../img/icons/icon--mail.svg", $size: auto 15px, $position: left); }
+
+
+  &--facebook{ @include bg('../img/icons/icon--facebook.svg'); }
+  &--instagram{ @include bg("../img/icons/icon--instagram.svg"); }
+}
+
+
