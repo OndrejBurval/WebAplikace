@@ -1,10 +1,14 @@
 export class Form{
     constructor(formDiv) {
+
+
         this._form = document.querySelector(formDiv)
+
         this._submit = this._form.querySelector("button")
 
         this.inputSelectArray = this.loadInputs()
         this.textareaSelectArray = this.loadTextareas()
+
 
         this.valid = true;
         this.preventDefault()
@@ -121,8 +125,8 @@ export class Form{
                 inputArray.push(rowArray)
 
             } else{
-                throw new Error("Error: Form input (${input}) is missing id !")
                 error = true
+                throw new Error("Error: Form input (${input}) is missing id !")
             }
         })
 
@@ -143,6 +147,4 @@ export class Form{
             "\n    clearTextareas()" +
             "\n    createInputValueArray()")
     }
-
-
 }
