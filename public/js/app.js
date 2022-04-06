@@ -9,7 +9,7 @@ navigace.init()
 
 
 const form = new Form("#kontaktForm")
+form._validateRequired()
 
 const btn = qs(".json")
 
-console.log(variable)
