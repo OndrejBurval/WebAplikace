@@ -36,7 +36,8 @@
 
       }
       @media (max-width: 767px){
-          border-width: 20px;
+        width: 80%;
+        margin-block: 30px;
       }
       
 
@@ -89,7 +90,9 @@
         grid-column: 2 / 3;
 
         .img--inner{
-          transform: rotateY(-35deg) translateX(-30px);
+          @media (min-width: 768px){
+            transform: rotateY(-35deg) translateX(-30px);
+          }
         }
       }
     }
@@ -100,7 +103,9 @@
       }
 
       .img--inner{
-        transform: rotateY(35deg) translateX(30px);
+        @media (min-width: 768px){
+          transform: rotateY(35deg) translateX(30px);
+        }
       }
 
       .mouseSVG{

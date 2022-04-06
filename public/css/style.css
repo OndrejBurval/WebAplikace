@@ -309,6 +309,14 @@ button {
   border: none;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 form {
   background: #003f88;
   border-radius: 70px 70px 0 70px;
@@ -573,6 +581,9 @@ form .formValidationError::before {
   height: 100%;
   width: var(--arrow-width);
   border: none;
+  transition: 0.5s;
+  transform: scale(1);
+  transform-origin: center;
 }
 @media (max-width: 767px) {
   #prevSlide, #nextSlide {
@@ -605,7 +616,7 @@ form .formValidationError::before {
 }
 
 .clicked svg {
-  transform: translateX(25px) !important;
+  transform: translateX(25px) scale(1.1) !important;
 }
 .clicked svg .svgProperty {
   fill: #ffd500 !important;
@@ -613,12 +624,17 @@ form .formValidationError::before {
 
 #prevSlide {
   left: 0;
-  transform: rotate(180deg);
+  transition: 0.3s;
+  transform: rotate(180deg) scale(1);
 }
 @media (max-width: 767px) {
   #prevSlide {
     left: -25px;
   }
+}
+#prevSlide.last {
+  transform: rotate(180deg) scale(0);
+  opacity: 0;
 }
 
 #nextSlide {
@@ -628,6 +644,10 @@ form .formValidationError::before {
   #nextSlide {
     right: -25px;
   }
+}
+#nextSlide.last {
+  transform: scale(0);
+  opacity: 0;
 }
 
 nav {
@@ -1450,7 +1470,8 @@ hr {
 }
 @media (max-width: 767px) {
   .reference .img--inner {
-    border-width: 20px;
+    width: 80%;
+    margin-block: 30px;
   }
 }
 .reference .img--inner::-webkit-scrollbar {
@@ -1488,14 +1509,18 @@ hr {
 .reference .ref:nth-child(even) .img--container {
   grid-column: 2/3;
 }
-.reference .ref:nth-child(even) .img--container .img--inner {
-  transform: rotateY(-35deg) translateX(-30px);
+@media (min-width: 768px) {
+  .reference .ref:nth-child(even) .img--container .img--inner {
+    transform: rotateY(-35deg) translateX(-30px);
+  }
 }
 .reference .ref:nth-child(odd) .img--container {
   grid-column: 1/2;
 }
-.reference .ref:nth-child(odd) .img--inner {
-  transform: rotateY(35deg) translateX(30px);
+@media (min-width: 768px) {
+  .reference .ref:nth-child(odd) .img--inner {
+    transform: rotateY(35deg) translateX(30px);
+  }
 }
 .reference .ref:nth-child(odd) .mouseSVG {
   inset: auto 35px 15px auto;

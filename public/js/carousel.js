@@ -1,3 +1,4 @@
+
 const carouselSlide = document.querySelector(".carousel-slide");
 const carouselDiv = document.querySelectorAll(".carousel-slide .slide");
 
@@ -22,6 +23,10 @@ nextBtn.addEventListener("click", () => {
     counter++;
     carouselDiv[counter].classList.add("active");
 
+    if (prevBtn.classList.contains("last")) prevBtn.classList.remove("last")
+    if (counter + 1 === carouselDiv.length) nextBtn.classList.add("last");
+
+
     carouselSlide.style.transform = "translateX(" + (-size * counter) + "px";
 })
 
@@ -35,7 +40,10 @@ prevBtn.addEventListener("click", () => {
 
     carouselDiv[counter].classList.remove("active");
     counter--;
-    carouselDiv[counter].classList.add("active");
+    carouselDiv[counter].classList.add("active")
+
+    if (nextBtn.classList.contains("last")) nextBtn.classList.remove("last")
+    if (counter === 0) prevBtn.classList.add("last")
 
     carouselSlide.style.transform = "translateX(" + (-size * counter) + "px";
 })
@@ -44,7 +52,5 @@ carouselSlide.addEventListener("transitionend", () => {
     if (counter <= 0 || counter >= carouselDiv.length) return;
 
 
-    carouselDiv[counter - 1].classList.remove("active");
-    carouselDiv[counter + 1].classList.remove("active");
 
 })
