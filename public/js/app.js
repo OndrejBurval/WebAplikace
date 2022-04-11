@@ -9,7 +9,7 @@ navigace.init()
 
 const form = new Form("#kontaktForm")
 form._validateRequired()
-form._testSubmited()
+//form._testSubmited()
 
 const carousel = new Carousel(".carousel-container")
 carousel.init()

@@ -1,4 +1,5 @@
 form{
+  position: relative;
   background: $mediumBlue;
   @include borderRadius(70px);
   padding: 40px;
@@ -11,7 +12,7 @@ form{
     @include borderRadius(35px);
 
 
-    padding: 15px 15px 5px 15px;
+    padding: 15px 25px 5px 25px;
   }
 
 
@@ -136,4 +137,50 @@ form{
     }
   }
 
+  // assets
+  .asset{
+    &--1{
+      inset: auto auto 0 -130px;
+      height: 400px !important;
+      z-index: 20;
+
+      @media (min-width: 768px) and (max-width: 1299px){
+        left: -140px !important;
+        width: 350px !important;
+      }
+      @media (max-width: 767px){
+        height: 300px !important;
+        left: -80px !important;
+      }
+    }
+
+    &--lamp{
+      height: 140% !important;
+      width: 500px !important;
+      inset: auto auto 0 -280px;
+
+
+      @media (max-width: 1299px){
+          display: none;
+      }
+    }
+
+    &--character{
+      z-index: 10;
+      width: 400px;
+      height: 100%;
+      inset: auto -200px -50px auto !important;
+      @include bg("../img/character-sitting.svg", $size: contain, $position: bottom);
+
+
+      @media (min-width: 768px) and (max-width: 1299px){
+        right: -100px !important;
+        width: 300px;
+      }
+      @media (max-width: 767px){
+        width: 220px;
+        right: -50px !important;
+      }
+    }
+  }
 }

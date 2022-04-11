@@ -157,15 +157,31 @@
     &:first-child{
       inset: auto auto 40px -70px;
       z-index: 20;
+
+      @media (max-width: 767px){
+        z-index: 1;
+        width: 80px !important;
+        bottom: 30px !important;
+        left: -50px !important;
+      }
     }
 
     &--clock{
       inset: 60px auto auto 220px;
       filter: brightness(1.05);
+
+      @media (max-width: 767px){
+          display: none;
+      }
     }
 
     &:last-child{
       inset: auto -35px 85px auto;
+
+      @media (max-width: 767px){
+        right: -80px;
+        bottom: 0;
+      }
     }
   }
 }
