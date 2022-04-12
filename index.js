@@ -1,25 +1,7 @@
 // Importy
 const express = require('express')
 const {request, response } = require("express")
-const fs = require("fs")
-
-
-const dataForJSON = {
-    name: "Pepé",
-    breed: "poodle",
-    color: "black"
-}
-
-const exportJSON = (data, fileName) => {
-    const jsonData = JSON.stringify(dataForJSON)
-    fs.writeFile(`./public/data/${fileName}.json`, jsonData, function (err){
-        if (err){
-            console.log(err)
-        }
-    });
-}
-//exportJSON(dataForJSON, "file")
-
+const fs = require('fs')
 
 // Basic settings
 const app = module.exports = express()
@@ -50,9 +32,30 @@ app.get('/styleguide', (req, res) => {
     });
 })
 
+app.get('/saveJson', (req, res) => {
+    const query = req.query.data
+    if (query){
+        saveJson(query)
+        res.redirect("/");
+    } else {
+        res.redirect("/404");
+    }
+})
+
 // 404 page
 app.get('*', (req, res) => {
     res.render('404', {
         title: "404 Page"
     });
 })
+
+const saveJson = (data) => {
+    fs.appendFile(`public/data/formData.json`, data, function (err){
+        if (err){
+            console.log(err)
+        }
+    });
+}
+
+
+

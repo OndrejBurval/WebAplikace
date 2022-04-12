@@ -9,16 +9,33 @@ export class Form{
         this.inputSelectArray = this.loadInputs()
         this.textareaSelectArray = this.loadTextareas()
 
-
-        this.valid = true;
+        this.checkSubmitedLocalStorageForSubmited()
         this.preventDefault()
+        this.valid = true;
     }
 
 
+    getSubmit = (target) => {
+        this._submit.addEventListener("click", () => {
+            localStorage.setItem("submited", true)
+            if (this.valid) window.location.href = target + "?data=" + this.getJSON();
+        })
+    }
+
+
+    checkSubmitedLocalStorageForSubmited = () => {
+        if (localStorage.getItem("submited")){
+            this._form.classList.add("submited")
+            localStorage.removeItem("submited")
+            window.scrollTo(0, this._form.offsetTop)
+        } else if (this._form.classList.contains("submited")){
+            this._form.classList.remove("submited")
+        }
+    }
 
 
     // zvaliduje zda komponenty s [data-required] nejsou empty
-    _validateRequired = () => {
+    validateRequired = () => {
         const requiredInputs = this._form.querySelectorAll('[data-required]')
 
         this._submit.addEventListener("click", (e) => {
@@ -35,7 +52,6 @@ export class Form{
                     this.throwMessage(input, "Pole nesmí být prázdné")
                     this.valid = false
                 } else{
-                    e.preventDefault()
                     this.valid = true
                 }
             })
@@ -126,11 +142,60 @@ export class Form{
 
             } else{
                 error = true
-                throw new Error("Error: Form input (${input}) is missing id !")
+                throw new Error(`Error: Form input (${input}) is missing id !`)
             }
         })
 
         if (!error) return inputArray
+    }
+
+    // vytvoří array hodnot
+    createTextAreaValueArray = () => {
+        const textAreaArray = []
+        let error = false;
+
+        this.textareaSelectArray.forEach((textArea) => {
+            const inputId = textArea.getAttribute("id")
+            if (inputId) {
+                const label = document.querySelector(`[for="${inputId}"]`)
+                const labelValue = label ? label.innerHTML.trim() : null
+
+                const inputValue = textArea.value
+                const rowArray = [labelValue, inputId, inputValue]
+
+                textAreaArray.push(rowArray)
+
+            } else{
+                error = true
+                throw new Error(`Error: Form input (${textArea}) is missing id !`)
+            }
+        })
+
+        if (!error) return textAreaArray
+    }
+
+
+    getJSON = () => {
+       // ${input.getAttribute("id")}; value: ${input.value}
+        const inputData = this.createInputValueArray()
+        const textAreaData = this.createTextAreaValueArray()
+        const data = {}
+
+        inputData.forEach((e) => {
+            const obj = {
+                [e[0]]: e[2]
+            }
+            Object.assign(data, obj)
+        })
+        textAreaData.forEach((e) => {
+            const obj = {
+                [e[0]]: e[2]
+            }
+            Object.assign(data, obj)
+        })
+
+        const json = JSON.stringify(data, null, 1)
+        return json
     }
 
 
