@@ -1,29 +1,11 @@
 .sluzby{
   position: relative;
-
-  @include before{
-    width: 50%;
-    left: -60%;
-    z-index: 1;
-    background: linear-gradient(to right, white, transparent);
-
-  }
-
-  @include after{
-    width: 50%;
-    left: auto;
-    right: -60%;
-    z-index: 1;
-    background: linear-gradient(to left, white, transparent);
-
-  }
 }
 
 .carousel-container{
   width: 100%;
   margin: auto;
   position: relative;
-
 }
 
 .carousel-slide{

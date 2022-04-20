@@ -14,6 +14,7 @@
   @media (max-width: 767px){
       grid-template-rows: auto auto;
       grid-template-columns: auto auto;
+    padding-block: 100px;
   }
 
 
@@ -159,10 +160,7 @@
       z-index: 20;
 
       @media (max-width: 767px){
-        z-index: 1;
-        width: 80px !important;
-        bottom: 30px !important;
-        left: -50px !important;
+        display: none;
       }
     }
 
@@ -179,8 +177,9 @@
       inset: auto -35px 85px auto;
 
       @media (max-width: 767px){
-        right: -80px;
         bottom: 0;
+        margin-right: 10px;
+        width: 70px !important;
       }
     }
   }

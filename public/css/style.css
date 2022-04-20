@@ -453,8 +453,9 @@ form .asset--1 {
 }
 @media (max-width: 767px) {
   form .asset--1 {
-    height: 300px !important;
-    left: -80px !important;
+    height: 250px !important;
+    left: -90px !important;
+    margin-bottom: 120px;
   }
 }
 form .asset--lamp {
@@ -485,38 +486,14 @@ form .asset--character {
 }
 @media (max-width: 767px) {
   form .asset--character {
-    width: 220px;
-    right: -50px !important;
+    margin-bottom: 120px;
+    width: 180px;
+    right: -70px !important;
   }
 }
 
 .sluzby {
   position: relative;
-}
-.sluzby::before {
-  position: absolute;
-  content: "";
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background-color: lightblue;
-  width: 50%;
-  left: -60%;
-  z-index: 1;
-  background: linear-gradient(to right, white, transparent);
-}
-.sluzby::after {
-  position: absolute;
-  content: "";
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background-color: lightblue;
-  width: 50%;
-  left: auto;
-  right: -60%;
-  z-index: 1;
-  background: linear-gradient(to left, white, transparent);
 }
 
 .carousel-container {
@@ -977,6 +954,7 @@ footer ul li a:hover {
 .content--404 {
   display: grid;
   place-items: center;
+  text-align: center;
 }
 .content--404 .btn {
   margin-top: 15px;
@@ -1248,12 +1226,18 @@ hr {
   z-index: 20;
   filter: brightness(0.8);
 }
+@media (max-width: 1023px) {
+  .pathBoxes .asset:first-child {
+    width: 100px !important;
+    left: -20px !important;
+  }
+}
 .pathBoxes .asset:last-child {
   inset: auto -90px -100px auto;
 }
 @media (max-width: 1023px) {
   .pathBoxes .asset:last-child {
-    right: -70px;
+    right: -85px;
     width: 150px;
   }
 }
@@ -1298,6 +1282,7 @@ hr {
   .citace {
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
+    padding-block: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -1444,10 +1429,7 @@ hr {
 }
 @media (max-width: 767px) {
   .citace .asset:first-child {
-    z-index: 1;
-    width: 80px !important;
-    bottom: 30px !important;
-    left: -50px !important;
+    display: none;
   }
 }
 .citace .asset--clock {
@@ -1464,8 +1446,9 @@ hr {
 }
 @media (max-width: 767px) {
   .citace .asset:last-child {
-    right: -80px;
     bottom: 0;
+    margin-right: 10px;
+    width: 70px !important;
   }
 }
 
@@ -1487,8 +1470,8 @@ hr {
 }
 @media (max-width: 767px) {
   .sluzby .carousel-container .asset:first-child {
-    inset: auto auto 30px -90px;
-    width: 150px;
+    inset: auto auto 30px -70px;
+    width: 120px;
   }
 }
 .sluzby .carousel-container .asset--5 {
@@ -1502,7 +1485,7 @@ hr {
 }
 @media (max-width: 767px) {
   .sluzby .carousel-container .asset--5 {
-    inset: auto -50px -90px auto;
+    inset: auto -70px -20px auto;
     opacity: 0.8;
   }
 }

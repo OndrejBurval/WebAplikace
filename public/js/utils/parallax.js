@@ -26,11 +26,11 @@ const addParallax = (target, speed) => {
 }
 
 
-addParallax(".asset--1",-1.5)
-addParallax(".asset--2",2)
-addParallax(".asset--3",1.5)
-addParallax(".asset--4",2)
-addParallax(".asset--5",-1.5)
+addParallax(".asset--1",-1)
+addParallax(".asset--2",.6)
+addParallax(".asset--3",.9)
+addParallax(".asset--4",1)
+addParallax(".asset--5",-1)
 addParallax(".asset--clock",-0.8)
 addParallax(".asset--lamp",0.5)
 addParallax(".asset--character",-0.9)

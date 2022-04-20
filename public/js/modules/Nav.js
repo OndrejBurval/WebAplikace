@@ -3,6 +3,7 @@ export class Nav{
         this._navOpenBtn = document.querySelector(navOpenBtn)
         this._navCloseBtn = document.querySelector(navCloseBtn)
         this._navBar = document.querySelector(navBar)
+        this._linkArray = this._navBar.querySelectorAll(".nav--item")
     }
 
     _addOpenListener = () => {
@@ -18,8 +19,17 @@ export class Nav{
         })
     }
 
+    _linkClickedListener = () => {
+        this._linkArray.forEach((e) => {
+            e.addEventListener("click", () => {
+                this._navBar.style.transform = "translateX(85vw)"
+            })
+        })
+    }
+
     init = () => {
         this._addOpenListener()
         this._addCloseListener()
+        this._linkClickedListener()
     }
 }
