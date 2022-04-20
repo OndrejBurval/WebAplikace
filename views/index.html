@@ -5,7 +5,7 @@
 
 <div class="site__wrapper">
 
-    <section class="header" id="uvod">
+    <section class="header" id="uvod" data-navIndex="0">
         <div class="content--left">
             <h1>
                 Lorem ipsum
@@ -18,12 +18,12 @@
             </p>
 
             <div class="links">
-                <a href="#">
+                <a href="#reference">
                     <span class="btn btn--primary">
                         Button
                     </span>
                 </a>
-                <a href="#">
+                <a href="#sluzby">
                     <span class="btn btn--secondary">
                         Button
                     </span>
@@ -97,7 +97,7 @@
 
     <hr>
 
-    <section class="sluzby" id="sluzby">
+    <section class="sluzby" id="sluzby" data-navIndex="1">
         <h2>
             služby
         </h2>
@@ -191,7 +191,7 @@
 
     <hr>
 
-    <section class="reference" id="reference">
+    <section class="reference" id="reference" data-navIndex="2">
         <h2> reference </h2>
 
         <div class="ref">
@@ -238,7 +238,7 @@
                 </div>
             </div>
 
-            <a href="#">
+            <a href="http://hanaknizkova.cz/" target="_blank">
                 <span class="btn btn--primary">
                     Navštívit
                 </span>
@@ -292,7 +292,7 @@
                 </div>
             </div>
 
-            <a href="#">
+            <a href="http://hanaknizkova.cz/" target="_blank">
                 <span class="btn btn--primary">
                     Navštívit
                 </span>
@@ -303,7 +303,7 @@
 
     <hr>
 
-    <section class="kontakt" id="kontakt">
+    <section class="kontakt" id="kontakt"  data-navIndex="3">
         <%- include('components/form.html') -%>
     </section>
 

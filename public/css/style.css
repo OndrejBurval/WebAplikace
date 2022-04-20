@@ -440,6 +440,17 @@ form .formValidationError::before {
     grid-row: 4/5;
   }
 }
+form .submitedMsg {
+  grid-column: 1/3;
+  background-color: #fdc500;
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  padding-block: 20px;
+  font-family: "Playfair Display", Arial;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 form .asset--1 {
   inset: auto auto 0 -130px;
   height: 400px !important;
@@ -681,6 +692,14 @@ nav {
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.096) 0 2px 5px;
   background: white;
+  transition: 0.3s;
+  z-index: 55;
+  padding-block: 15px;
+}
+@media (max-width: 767px) {
+  nav {
+    padding-block: 5px;
+  }
 }
 nav .mobile-nav-open {
   cursor: pointer;
@@ -772,8 +791,8 @@ nav .nav--inner .nav--item:not(.navBTN)::before {
   }
 }
 nav .nav--inner .nav--item:not(.navBTN):hover::before {
-  opacity: 1;
-  transform: translateY(0px);
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
 }
 @media (max-width: 767px) {
   nav .nav--inner .nav--item:not(.navBTN) {
@@ -786,6 +805,21 @@ nav .nav--inner .nav--item:not(.navBTN):hover::before {
     color: white;
     font-family: "Playfair Display", Arial;
   }
+}
+nav .nav--inner .actual .btn {
+  background-color: transparent !important;
+  color: #00296b;
+  border-radius: 30px 30px 30px 30px !important;
+}
+@media (max-width: 767px) {
+  nav .nav--inner .actual .btn {
+    color: white !important;
+    border-color: white !important;
+  }
+}
+nav .nav--inner .actual::before {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
 }
 nav .nav--inner .navBTN {
   margin-top: 15px;
@@ -802,6 +836,11 @@ nav .nav--inner .navBTN {
     width: 50px;
     margin: 20px 0 20px 20px;
   }
+}
+
+.scrolling {
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
 }
 
 footer {
@@ -1039,13 +1078,14 @@ hr {
 .header {
   position: relative;
   display: grid;
+  padding-top: 100px;
   margin-bottom: 50px;
   place-items: center start;
 }
 @media screen and (min-width: 768px) {
   .header {
     grid-template-columns: 1fr 1fr;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 50px);
     max-height: 1500px;
   }
 }

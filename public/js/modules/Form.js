@@ -27,6 +27,10 @@ export class Form{
         if (localStorage.getItem("submited")){
             this._form.classList.add("submited")
             localStorage.removeItem("submited")
+            const submitedMsg = document.createElement("div")
+            submitedMsg.classList.add("submitedMsg")
+            submitedMsg.innerHTML = "Děkuji za odeslání"
+            this._form.append(submitedMsg)
             window.scrollTo(0, this._form.offsetTop)
         } else if (this._form.classList.contains("submited")){
             this._form.classList.remove("submited")
