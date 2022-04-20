@@ -8,7 +8,8 @@ const navigace = new Nav(".mobile-nav-open", ".mobile-nav-close", ".nav--inner u
 navigace.init()
 
 const form = new Form("#kontaktForm")
-form._validateRequired()
+form.validateRequired()
+form.getSubmit("/saveJson")
 //form._testSubmited()
 
 const carousel = new Carousel(".carousel-container")
@@ -18,4 +19,6 @@ const mouseOver = new MouseOver()
 mouseOver.createCursorDiv()
 mouseOver.addTarget(".pathBoxes")
 //mouseOver.addTarget(".reference")
+
+
 
