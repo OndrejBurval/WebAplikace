@@ -1,18 +1,13 @@
 .reference{
   position: relative;
 
-  @include blockPadding();
-
   h3{
-
     @media (max-width: 767px){
       font-size: 25px;
     }
   }
 
-
   .img{
-
     &--container{
       perspective: 1500px;
       background: $orange;
@@ -20,20 +15,15 @@
       padding-block: 10px;
     }
 
-
-
     &--inner{
       aspect-ratio: 16 / 9;
       margin-inline: auto;
       width: 100%;
       overflow-x: hidden;
-      //border: solid $orange 30px;
-      //@include borderRadius(180px);
       @include borderRadius(30px);
 
       @media (min-width: 768px) and (max-width: 1023px){
         border-width: 25px;
-
       }
       @media (max-width: 767px){
         width: 80%;
@@ -51,27 +41,18 @@
         cursor: s-resize;
       }
     }
-
-
   }
 
-
-
   .btn{
-
     @media (max-width: 767px){
       margin-top: 20px;
     }
   }
 
-
-
-
   .ref{
     &:not(:last-child){
       margin-bottom: 80px;
     }
-
 
     @media (min-width: 768px){
       display: grid;
@@ -114,7 +95,6 @@
     }
 
   }
-
 
   // pozadí
   @include after{

@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 * {
-  font-family: "Segoe UI", Arial;
+  font-family: "Segoe UI", Arial, sans-serif;
   color: #2a2a2a;
   line-height: 1.4;
 }
@@ -227,7 +227,6 @@ p {
 }
 
 .mouseSVG {
-  position: none;
   z-index: 10;
   position: absolute;
   inset: auto auto 15px 35px;
@@ -840,7 +839,7 @@ nav .nav--inner .navBTN {
 
 .scrolling {
   padding: 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 20px;
 }
 
 footer {
@@ -1394,7 +1393,7 @@ hr {
   font-size: 115px;
   pointer-events: none;
   background: transparent;
-  font-family: "Engravers MT";
+  font-family: "Engravers MT", "Arial", sans-serif;
   color: white;
 }
 @media (max-width: 767px) {
@@ -1532,17 +1531,6 @@ hr {
 
 .reference {
   position: relative;
-  padding-block: 20px;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .reference {
-    padding-block: 35px;
-  }
-}
-@media (min-width: 1024px) {
-  .reference {
-    padding-block: 100px;
-  }
 }
 @media (max-width: 767px) {
   .reference h3 {

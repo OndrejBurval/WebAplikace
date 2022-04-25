@@ -22,7 +22,7 @@ export const watchLinksInView = (navLinkClassName) => {
                 let index = this.getAttribute("data-navIndex")
                 navLinks[index].classList.add("actual")
                 navLinks.forEach((e, key) => {
-                    if (key != index) e.classList.remove("actual")
+                    if (key !== index) e.classList.remove("actual")
                 })
             }
         });

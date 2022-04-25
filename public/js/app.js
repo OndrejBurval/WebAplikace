@@ -21,7 +21,6 @@ carousel.init()
 const mouseOver = new MouseOver()
 mouseOver.createCursorDiv()
 mouseOver.addTarget(".pathBoxes")
-//mouseOver.addTarget(".reference")
 
 addParallax(".asset--1",-1)
 addParallax(".asset--2",.6)
@@ -31,6 +30,5 @@ addParallax(".asset--5",-1)
 addParallax(".asset--clock",-0.8)
 addParallax(".asset--lamp",0.5)
 addParallax(".asset--character",-0.9)
-
 
 watchLinksInView(".nav--item")
