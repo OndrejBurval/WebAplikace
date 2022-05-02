@@ -1,5 +1,8 @@
 # WebAplikace
- Semestrální práce
+
+©Ondřej Buřval
+
+Semestrální práce
 
 Používá express, nodemon, ejs, sass
 
