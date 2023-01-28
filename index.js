@@ -5,7 +5,7 @@ const fs = require('fs')
 
 // Basic settings
 const app = module.exports = express()
-const port = 3000
+const port = process.env.PORT | 3000
 
 // Hledá html - bez toho musejí být ejs soubory .ejs
 app.engine('.html', require('ejs').__express)
